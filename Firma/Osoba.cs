@@ -12,9 +12,12 @@ namespace Firma
         private DateTime dataUrodzenia;
         private string PESEL;
         private Plcie Plec;
+        private CultureInfo cultures = CultureInfo.CreateSpecificCulture("pl-PL");
         public string Imie { get { return imie; } set { imie = value; } }
         public string Nazwisko { get { return nazwisko; } set { nazwisko = value; } }
         public DateTime DataUrodzenia { get => dataUrodzenia; set => dataUrodzenia = value; }
+
+
 
         
         public Osoba()
@@ -46,6 +49,22 @@ namespace Firma
             TimeSpan result = todaysDate.Subtract(dataUrodzenia);
             int pomoc_wiek = (int)((result.TotalDays)/ 365);
             return pomoc_wiek;
+        }
+        public void format_text()
+        {
+            string pomoc_imie = imie.Substring(1);
+            pomoc_imie = pomoc_imie.ToLower();
+            string pomoc_naz = nazwisko.Substring(1);
+            pomoc_naz = pomoc_naz.ToLower();
+            if (!string.IsNullOrEmpty(imie))
+            {
+                imie = char.ToUpper(imie[0]) + pomoc_imie;
+            }
+            if (!string.IsNullOrEmpty(nazwisko))
+            {
+                nazwisko = char.ToUpper(nazwisko[0]) + pomoc_naz;
+            }
+
         }
         override public string ToString()
         {
