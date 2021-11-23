@@ -68,7 +68,7 @@ namespace Firma
         }
         override public string ToString()
         {
-            return "imie: "+imie+" nazwisko: "+nazwisko+ "("+wiek()+") pesel: "+PESEL;
+            return imie+" nazwisko: "+nazwisko+ "("+wiek()+") pesel: "+PESEL;
         }
     }
 }
