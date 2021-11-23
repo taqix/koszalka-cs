@@ -12,14 +12,16 @@ namespace Firma
         private DateTime dataUrodzenia;
         private string PESEL;
         private Plcie Plec;
+        private string numer_telefonu;
         private CultureInfo cultures = CultureInfo.CreateSpecificCulture("pl-PL");
         public string Imie { get { return imie; } set { imie = value; } }
         public string Nazwisko { get { return nazwisko; } set { nazwisko = value; } }
         public DateTime DataUrodzenia { get => dataUrodzenia; set => dataUrodzenia = value; }
+        public string Numer_tel { get { return numer_telefonu; } set { numer_telefonu = value; } }
 
 
 
-        
+
         public Osoba()
         {
             imie = "Miruś";
@@ -41,6 +43,15 @@ namespace Firma
             DateTime.TryParseExact(_data_urodzenia, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MMM-yy" }, null, DateTimeStyles.None, out dataUrodzenia); ;
             PESEL = _Pesel;
             Plec = _plec;
+        }
+        public Osoba(string _imie, string _nazwisko, string _data_urodzenia, string _Pesel, Plcie _plec,string _numer_telefonu)
+        {
+            imie = _imie;
+            nazwisko = _nazwisko;
+            DateTime.TryParseExact(_data_urodzenia, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MMM-yy" }, null, DateTimeStyles.None, out dataUrodzenia); ;
+            PESEL = _Pesel;
+            Plec = _plec;
+            numer_telefonu = _numer_telefonu;
         }
         public int wiek()
         {
@@ -66,9 +77,33 @@ namespace Firma
             }
 
         }
+        public void ile_godzin(string _godzina)
+        {
+            CultureInfo enUS = new CultureInfo("en-US");
+            DateTime godzina;
+            DateTime.TryParseExact(_godzina, "HH:mm",enUS, DateTimeStyles.None, out godzina);
+            DateTime todaysDate = DateTime.Now;
+            dataUrodzenia = dataUrodzenia.AddHours(godzina.Hour);
+            double cos = (todaysDate - dataUrodzenia).TotalHours;
+            int wynik = Convert.ToInt32(cos);
+            Console.WriteLine(wynik);
+
+        }
+        public bool check()
+        {
+            if(PESEL.Length>11)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         override public string ToString()
         {
-            return imie+" nazwisko: "+nazwisko+ "("+wiek()+") pesel: "+PESEL;
+            return "imie: "+imie +" nazwisko: "+nazwisko+ "("+wiek()+") pesel: "+PESEL + " numer telefonu: "+numer_telefonu;
         }
+        
     }
 }

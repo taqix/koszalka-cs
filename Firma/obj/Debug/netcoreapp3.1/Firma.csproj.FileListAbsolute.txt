@@ -25,3 +25,16 @@ C:\Users\Gamer\Desktop\Pulpit\Firma\Firma\Firma\obj\Debug\netcoreapp3.1\Firma.cs
 C:\Users\Gamer\Desktop\Pulpit\Firma\Firma\Firma\obj\Debug\netcoreapp3.1\Firma.dll
 C:\Users\Gamer\Desktop\Pulpit\Firma\Firma\Firma\obj\Debug\netcoreapp3.1\Firma.pdb
 C:\Users\Gamer\Desktop\Pulpit\Firma\Firma\Firma\obj\Debug\netcoreapp3.1\Firma.genruntimeconfig.cache
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.exe
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.deps.json
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.runtimeconfig.json
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.runtimeconfig.dev.json
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.dll
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.pdb
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.csprojAssemblyReference.cache
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.AssemblyInfoInputs.cache
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.AssemblyInfo.cs
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.csproj.CoreCompileInputs.cache
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.dll
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.pdb
+C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.genruntimeconfig.cache
