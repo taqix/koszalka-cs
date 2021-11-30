@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Firma
 {
-    class Osoba
+    public abstract class Osoba
     {
         private string imie;
         private string nazwisko;
@@ -18,6 +18,9 @@ namespace Firma
         public string Nazwisko { get { return nazwisko; } set { nazwisko = value; } }
         public DateTime DataUrodzenia { get => dataUrodzenia; set => dataUrodzenia = value; }
         public string Numer_tel { get { return numer_telefonu; } set { numer_telefonu = value; } }
+        public string pesel { get { return PESEL; } set { PESEL = value; } }
+        public Plcie plec { get { return Plec; } set { Plec = value; } }
+
 
 
 

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Globalization;
 namespace Firma
 {
     public enum Plcie
@@ -12,16 +12,15 @@ namespace Firma
         
         static void Main(string[] args)
         {
-            Plcie plcie = Plcie.K;
-            Osoba mireczek = new Osoba("MirECZek","Kowalski", "2021-11-22","33333333333", plcie);
-            Console.WriteLine(mireczek.wiek());
-            Console.WriteLine(mireczek.ToString());
-            mireczek.format_text();
-            Console.WriteLine(mireczek.ToString());
-            Console.WriteLine("Wpisz godzinę urodzenia: ");
-            string uro = Console.ReadLine();
-            mireczek.ile_godzin(uro);
-            Console.WriteLine(mireczek.check());
+            Plcie plciekobieca = Plcie.K;
+            Plcie plcieM = Plcie.M;
+            CzlonekZespolu jan = new CzlonekZespolu("Jan","Janowski", "1992-03-15", "92031507772",plcieM, "01-cze-2019","Jankowski programista");
+            Console.WriteLine(jan.ToString());
+            KierownikZespolu adam = new KierownikZespolu("Adam", "Kowalski", "1990-07-01", "90070100211", plcieM, 5);
+            Console.WriteLine(adam.ToString());
+            Zespol grupaIt = new Zespol("Grupa IT",adam);
+            grupaIt.dodajCzlonka(jan);
+            Console.WriteLine(grupaIt.ToString());
 
         }
         
