@@ -9,7 +9,7 @@ namespace Firma
         private int liczbaCzlonkow;
         private string nazwa;
         private KierownikZespolu kierownik;
-        private List<CzlonekZespolu> czlonkowie;
+        private List<CzlonekZespolu> czlonkowie = new List<CzlonekZespolu>();
         public int LiczbaCzlonkow { get { return liczbaCzlonkow; } set { liczbaCzlonkow = value; } }
         public string Nazwa { get { return nazwa; } set { nazwa = value; } }
         public KierownikZespolu Kierownik { get { return kierownik; } set { kierownik = value; } }
@@ -27,6 +27,31 @@ namespace Firma
 
             czlonkowie.Add(c);
             liczbaCzlonkow++;
+        }
+        public bool jestCzlonkiem(string PESEL)
+        {
+            bool test = false;
+            foreach(CzlonekZespolu c in czlonkowie)
+            {
+                if(c.pesel==PESEL)
+                {
+                    test = true;
+                }
+
+            }
+            return test;
+        }
+        public bool jestCzlonkiem(string _imie,string _nazwisko)
+        {
+            bool test = false;
+            foreach(CzlonekZespolu c in czlonkowie)
+            {
+                if(c.Imie==_imie && c.Nazwisko==_nazwisko)
+                {
+                    test = true;
+                }
+            }
+            return test;
         }
         public override string ToString()
         {

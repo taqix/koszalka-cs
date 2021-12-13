@@ -17,7 +17,7 @@ namespace Firma
         }
         override public string ToString()
         {
-            return Imie + " " + Nazwisko + " " + DataUrodzenia.ToString("dd.MMM.yyyy") + " " + pesel + " " + plec + " " + funkcja + " (" + datazapisu.ToString("dd-MMM-yyyy") + ")";
+            return Imie + " " + Nazwisko + " " + DataUrodzenia.ToString("dd-MM-yyyy") + " " + pesel + " " + plec + " " + funkcja + " (" + datazapisu.ToString("dd-MMM-yyyy") + ")";
         }
     }
 }

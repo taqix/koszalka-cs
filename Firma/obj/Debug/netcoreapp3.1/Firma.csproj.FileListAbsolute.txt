@@ -38,3 +38,17 @@ C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.csp
 C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.dll
 C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.pdb
 C:\Users\Wilk Tomasz\Desktop\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.genruntimeconfig.cache
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.exe
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.deps.json
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.runtimeconfig.json
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.runtimeconfig.dev.json
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.dll
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\bin\Debug\netcoreapp3.1\Firma.pdb
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.csproj.AssemblyReference.cache
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.AssemblyInfoInputs.cache
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.AssemblyInfo.cs
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.csproj.CoreCompileInputs.cache
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.dll
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.pdb
+C:\Users\Gamer\Desktop\Pulpit\koszalka-cs\Firma\obj\Debug\netcoreapp3.1\Firma.genruntimeconfig.cache
