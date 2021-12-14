@@ -53,6 +53,57 @@ namespace Firma
             }
             return test;
         }
+        public void usunCzlonka(string PESEL)
+        {
+            czlonkowie.RemoveAll(CzlonekZespolu => CzlonekZespolu.pesel == PESEL);
+            liczbaCzlonkow -= 1;
+
+        }
+        public void usunCzlonka(string _imie, string _nazwisko)
+        {
+            czlonkowie.RemoveAll(CzlonekZespolu => CzlonekZespolu.Imie == _imie && CzlonekZespolu.Nazwisko==_nazwisko );
+            liczbaCzlonkow -= 1;
+        }
+        public void usunCzlonkow()
+        {
+            czlonkowie.Clear();
+            liczbaCzlonkow = 0;
+        }
+        public List<CzlonekZespolu> WyszukajCzlonkow(string _funkcja)
+        {
+            List<CzlonekZespolu> mordzia = new List<CzlonekZespolu>();
+            foreach(CzlonekZespolu c in czlonkowie)
+            {
+                if(c.funkcja==_funkcja)
+                {
+                    mordzia.Add(c);
+                }
+            }
+            return mordzia;
+        }
+        public List<CzlonekZespolu> WyszukajCzlonkow(int miesiac)
+        {
+            List<CzlonekZespolu> mordzia = new List<CzlonekZespolu>();
+            foreach (CzlonekZespolu c in czlonkowie)
+            {
+                int pomoc=c.datazapisu.Month;
+                if(pomoc==miesiac)
+                {
+                    mordzia.Add(c);
+                }
+                
+
+            }
+            return mordzia;
+        }
+        /*public void tescikt()
+        {
+            foreach(CzlonekZespolu c in czlonkowie)
+            {
+                Console.WriteLine( c.datazapisu.ToString());
+            }
+        }
+        */
         public override string ToString()
         {
             string calosc = "";
